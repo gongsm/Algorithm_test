@@ -84,14 +84,40 @@ void change(BST *t)
 }
 int main(void) {
 	 int a[10] = {4, 5, 2, 1, 1, 9, 3, 7, 6, 8};
-
 	 BST tree;
-	 creatBSTree(&tree,a,10);/*改变指针的值，需传递指向指针的指针，传递指针是改变指向指针的值*/
-	 insertTree(NULL,&tree,10);
+	/* creatBSTree(&tree,a,10);*//*改变指针的值，需传递指向指针的指针，传递指针是改变指向指针的值*/
+	/* insertTree(NULL,&tree,10);
 	 preordertraverse(tree);
 	 printf("\n");
 	 inordertraverse(tree);
+*/
+     int x = 0xfffffffe;
+     int y = 0x80000001;
+     char test_a = y;
+	 float lsb = 0.00025;
+	 int test = 17800;
+	 unsigned char test_c = 0xff;
+	 char test_d = 0xff;
+	 x = test_c;
+	 y= test_d;
+     int test_f =0;
+     int test_e =0;
+      int flag =1;
+      test_f=flag?2:3;
+      flag =0;
+      test_e=flag?5:6;
+      printf("testf:%d,teste:%d\n",test_f,test_e);
  //    change(&tree);
  //    printf("%d",tree->key);
+/*	 float test = 5147483650.0;
+	    int test_int  = (int)(test);
+	    printf("%d",test_int);
+	    unsigned int result = *(unsigned int*)(&test);
+*/
+	 printf("test_a%d",test_a);
+	 printf("%d   %d\n",x, y);
 	return EXIT_SUCCESS;
 }
+
+
+
